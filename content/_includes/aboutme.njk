@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="{{ nesting }}favicon.ico" rel="icon" type="image/x-icon" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ css }}">
+    <meta name="description" content="{{ description }}">
+    <script src="{{ jss }}"></script>
+  </head>
+  <body class="{{ bodyClass }}">
+    <div class="blended_grid">
+      <aside class="pageLeftMenu">
+        {% include "leftmenu.njk" %}
+      </aside>
+      <main>
+        {{ content | safe }}
+      </main>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+body{
+    background-color : #09000c;
+    font-family : 'Roboto', sans-serif;
+    font-size : 12px;
+    padding-top : 10px;
+}
+.pageContent{
+
+    background-color : #080408;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+.button{
+    background-color: #7e57c2;
+    color: #16121b;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: center;
+    text-decoration: none;
+    
+
+}
