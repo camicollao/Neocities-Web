@@ -1,27 +1,43 @@
 body{
     background-color : #09000c;
     font-family : 'Roboto', sans-serif;
-    font-size : 12px;
-    padding-top : 10px;
+    font-size : 1rem;
+    padding-top : 1rem;
+    color: #be8fa3;
 }
 .pageContent{
 
     background-color : #080408;
-    display: flex;
-    width: 100vw;
-    height: 100vh;
+    display : block;
+    width : 1300px;
+    overflow : center;
+    margin : 18rem auto 0 auto;
+    width: 50rem;
+    height: 30rem;
     justify-content: center;
     align-items: center;
 
 }
+
+h2{
+    color: #d16c9f;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+
+}
+
+p{
+    padding-bottom: 1rem;
+}
+
 .button{
     background-color: #7e57c2;
-    color: #16121b;
-    padding: 10px 20px;
+    color: #dad1e4;
+    padding: 0.8rem 1.7rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3rem;
     cursor: pointer;
-    position: center;
+    align-items: center;
     text-decoration: none;
     
 
