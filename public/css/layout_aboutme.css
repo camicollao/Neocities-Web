@@ -91,7 +91,6 @@
     }
 
     .extraContent{
-        display: flex;
         justify-content: center;
     }
 
@@ -103,4 +102,12 @@
         width : 200px;
         height : 200px;
         margin-top : 5px;
+    }
+    .content{
+        width: 35%;
+        float: left;
+        padding: 1rem 4rem 1rem 4rem;
+    }
+    h2{
+        text-align: center;
     }
