@@ -1,44 +1,168 @@
-body{
-    background-color : #09000c;
-    font-family : 'Roboto', sans-serif;
-    font-size : 1rem;
-    padding-top : 1rem;
-    color: #be8fa3;
-}
-.pageContent{
+*{
+    padding : 0;
+    margin : 5px;
+    border : 0;
+    }
+    body{
+        background-image: url(stardewvalleywallpaper.jpg);
+        background-color : #09000c;
+        font-family : 'Roboto', sans-serif;
+        color : #be8fa3;
+        font-size : 16px;
+        padding-top : 10px;
+    }
+    .blended_grid{
+        display : block;
+        width : 1300px;
+        overflow : auto;
+        margin : 0 auto 0 auto;
+        
+    }
+    .pageHeader{
+        border-style: none;
+        float : left;
+        clear : none;
+        height : 55px;
+        width : 1200px;
+    }
+    .pageFooter{
+        background-color : #0b060e;
+        opacity: 0.5;
+        border-radius: 10px;
+        border-style: none;
+        float : left;
+        clear : none;
+        height : 55px;
+        width : 1200px;
+        font-size : 18px;
+        text-align: center;
+    }
+    .links{
+        color : #a55fd3;
+        text-decoration: none;
+    }
+    .links:hover{
+        color : #d16c9f;
+    }
 
-    background-color : #080408;
-    display : block;
-    width : 1300px;
-    overflow : auto;
-    margin : 18rem auto 0 auto;
-    width: 50rem;
-    height: 30rem;
-    justify-content: center;
-    align-items: center;
+    .rightMenuIntro{
+        padding-top: 10px;
+        align-items: center;
+    }
 
-}
+    .rightMenuTitle{
+        color : #a55fd3;
 
-h2{
-    color: #d16c9f;
-    justify-content: center;
-    padding-bottom: 0.5rem;
+    }
 
-}
+    .aside-nav ul {
+        list-style: none;
+    }
 
-p{
-    padding-bottom: 1rem;
-}
 
-.button{
-    background-color: #7e57c2;
-    color: #dad1e4;
-    padding: 0.8rem 1.7rem;
-    border: none;
-    border-radius: 0.3rem;
-    cursor: pointer;
-    align-items: center;
-    text-decoration: none;
+    .aside-nav li a{
+        color: #a55fd3;
+        font-size: 15px;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    .barHome:hover{
+        color: #ff5722;
+    }
     
+    .barAbout:hover{
+        color: #43a047;
+    }
+    .barBlog:hover{
+        color: #eeff41;
+    }
+   
+    .pageContent{
+        border-style: none;
+        border-radius: 10px;
+        opacity: 0.8;
+        padding-top: 20px;
+        padding-left: 30px;
+        background-color : #080408;
+        float : left;
+        clear : none;
+        height : 900px;
+        width : 870px;
+    }
 
-}
+    .updates{
+        display: flex;   
+    }
+
+
+    .headerTitle{
+        font-family: sans-serif;
+        background: linear-gradient(to right, #ef5350, #7e57c2, #2196f3, #43a047, #eeff41, #f9a825, #ff5722);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size : 3rem;
+        padding-top : 10px;
+    }
+
+    .pageContentTitle{
+        color : #d16c9f;
+        padding-top : 10px;
+    }
+    .recentPostTitle{
+        color : #7f3fbb;
+        font-size : 18px;
+        padding-top : 10px;
+    }
+
+
+    .pageRightMenu{
+        border-style: none;
+        border-radius: 10px;
+        background-color :#0b060e;
+        opacity: 0.8;
+        float : left;
+        clear : none;
+        height : 920px;
+        width : 280px;
+    }
+
+    .rightMenuContent{
+        padding-top : 20px;
+        text-align: center;
+        align-items: center;
+ 
+    }
+    .imgHiperfixation{
+        width : 200px;
+        height : 200px;
+        margin-top : 5px;
+    }
+    .status{
+        width : auto;
+        height : auto;
+        margin-top : 5px;
+    }
+    .imgHiperfixation{
+        justify-content: center;
+        width : 200px;
+        height : 300px;
+        margin-top : 5px;
+    }
+
+    .img-home{
+        width : 150px;
+        height : 150px;
+    }
+
+    #statuscafe {
+        padding: .5em;
+        background-color: rgb(37, 28, 53);
+        border: 1px solid rgb(84, 25, 112);
+    }
+    #statuscafe-username {
+        margin-bottom: .5em;
+    }
+    #statuscafe-content {
+        margin: 0 1em 0.5em 1em;
+    }
