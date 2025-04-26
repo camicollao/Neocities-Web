@@ -81,10 +81,9 @@
     .pageContent{
         border-style: none;
         border-radius: 10px;
-        opacity: 0.8;
         padding-top: 20px;
         padding-left: 30px;
-        background-color : #080408;
+        background-color : #0b060e;
         float : left;
         clear : none;
         height : 800px;
@@ -129,7 +128,6 @@
         border-style: none;
         border-radius: 10px;
         background-color :#0b060e;
-        opacity: 0.8;
         float : left;
         clear : none;
         height : 820px;
@@ -184,7 +182,6 @@
     .aside-box{
         align-items: center;
         border: 1px dotted rgba(223,144,164,.5);
-        padding: 1em;
         border-radius: 10px;
     }
 
@@ -195,4 +192,9 @@
 
     .phase-box{
         padding-left: 70px;
+    }
+
+    iframe{
+        max-height: 50px;
+        max-width: 200px;
     }
