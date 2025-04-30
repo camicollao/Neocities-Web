@@ -118,3 +118,14 @@
         height : 100px;
         margin-top : 5px;
     }
+
+    .box {
+        display:grid;
+        grid-template-columns:1fr 2fr;
+        grid-gap:5px;
+    }
+    
+    .box-right {
+        background: url(./images/me/diente-de-leon.jpg);
+        background-size:cover;
+    }
