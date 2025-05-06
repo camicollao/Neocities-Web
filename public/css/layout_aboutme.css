@@ -2,63 +2,33 @@
     padding : 0;
     margin : 5px;
     border : 0;
-    }
-    body{
-        background-image: url(stardewvalleywallpaper.jpg);
-        background-color : #09000c;
-        font-family : 'Roboto', sans-serif;
-        color : #be8fa3;
-        font-size : 16px;
-        padding-top : 10px;
-    }
-    .blended_grid{
-        width : 1800px;
-        overflow : auto;
-        margin : 30px auto 0 auto;
-        
-    }
+}
+
+img {
+    max-width:100%;
+}
+body{
+    background-image: url(stardewvalleywallpaper.jpg);
+    background-color : #09000c;
+    padding-top : 10px;
+    font-family : 'Roboto', sans-serif;
+    color : #be8fa3;
+    font-size : 16px;
+}
+
+@media (min-width:768px) {
 
     .pageLeftMenu{
-        margin-left: 200px;
-        opacity: 0.8;
-        border-radius: 10px;
-        background-color : #080408;
-        float : left;
-        clear : none;
-        height : 400px;
-        width : 200px;
+    margin-left: 200px;
+    opacity: 0.8;
+    border-radius: 10px;
+    background-color : #080408;
+    float : left;
+    clear : none;
+    height : 400px;
+    width : 200px;
     }
 
-    .leftMenuContent{
-        padding-top : 20px;
-        text-align: center;
- 
-    }
-
-    .leftMenuContent div{
-        cursor: pointer;
-        color: #7f3fbb;
-        font-size: 18px;
-        font-family: 'Roboto', sans-serif;
-        text-decoration: none;
-        padding: 10px;
-    }
-
-    a{
-        color: #7f3fbb;
-        text-decoration: none;
-    }
-    .barHome:hover{
-        color: #ff5722;
-    }
-    
-    .barAbout:hover{
-        color: #43a047;
-    }
-    .barBlog:hover{
-        color: #eeff41;
-    }
-   
     .pageContentExtent{
         margin-right: 200px;
         opacity: 0.8;
@@ -68,55 +38,9 @@
         height : 800px;
         width : 1100px;
     }
-    h1{
-        padding-top: 10px;
-        color: #7f3fbb;
-        font-size: 30px;
-        font-family: 'Roboto', sans-serif;
-        text-decoration: none;
-        padding: 10px;
-        text-align: center;
-        
-    }
 
-    .aboutMeContent{
-        margin : 30px 30px 0 30px;
-
-    }
-
-    .aboutMeInfo{
-        display: flex;
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-
-    .extraContent{
-        padding-top: 1rem;
-        width : 500px;
-
-
-    }
-
-    .pageContentTitle{
-        color: #d16c9f;
-    }
-
-    .img-content{
-        width : 100px;
-        height : 150px;
-        margin-top : 5px;
-    }
-    .content{
-        width: 35%;
-        float: left;
-    }
-    h2{
-        text-align: center;
-    }
-    .img-content-music{
-        width : 100px;
-        height : 100px;
-        margin-top : 5px;
+    .pageHeader{
+        display: none;
     }
 
     .box {
@@ -129,3 +53,123 @@
         background: url(./images/me/diente-de-leon.jpg);
         background-size:cover;
     }
+
+}
+
+
+.leftMenuContent{
+    padding-top : 20px;
+    text-align: center;
+
+}
+
+.leftMenuContent div{
+    cursor: pointer;
+    color: #7f3fbb;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    padding: 10px;
+}
+
+a{
+    color: #7f3fbb;
+    text-decoration: none;
+}
+
+.barHome:hover{
+    color: #ff5722;
+}
+
+.barAbout:hover{
+    color: #43a047;
+}
+.barBlog:hover{
+    color: #eeff41;
+}
+
+h1{
+    padding-top: 10px;
+    color: #7f3fbb;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.aboutMeContent{
+    margin : 30px 30px 0 30px;
+
+}
+
+.aboutMeInfo{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.extraContent{
+    padding-top: 1rem;
+    width : 500px;
+}
+
+.pageContentTitle{
+    color: #d16c9f;
+}
+
+.img-content{
+    width : 100px;
+    height : 150px;
+    margin-top : 5px;
+}
+.content{
+    width: 35%;
+    float: left;
+}
+
+h2{
+    text-align: center;
+}
+.img-content-music{
+    width : 100px;
+    height : 100px;
+    margin-top : 5px;
+}
+
+@media (max-width:768px) {
+
+    body{
+        background-image: none;
+    }
+
+    .pageContentExtent{
+    background-color : #080408;
+    float : right;
+    clear : none;
+    }
+
+    .pageHeader{
+        border-style: none;
+        clear : none;
+        padding: 10px;
+    
+    }
+
+    .pageLeftMenu{
+        display: none;
+    }
+
+    div{
+        padding: 1px;
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content{
+        width: auto;
+        float: auto;
+    }
+}

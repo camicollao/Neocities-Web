@@ -1,3 +1,13 @@
+*{
+    padding : 0;
+    margin : 5px;
+    border : 0;
+}
+
+img {
+    max-width:100%;
+}
+
 body{
     background-color : #09000c;
     font-family : 'Roboto', sans-serif;

@@ -3,7 +3,7 @@
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <link href="{{ nesting }}favicon.ico" rel="icon" type="image/x-icon" />
     <title>{{ title }}</title>
     <link rel="stylesheet" type="text/css" href="{{ css }}">
@@ -11,18 +11,17 @@
     <script src="https://tinylytics.app/embed/X5JaEKr8aYofLbUA2K3-.js" defer></script>
   </head>
   <body class="{{ bodyClass }}">
-    <div class="blended_grid">
+      <header>
+        {% include "headerdefault.njk" %}
+      </header>
       <main>
         {{ content | safe }}
       </main>
       <aside class="pageRightMenu">
         {% include "rightmenu.njk" %}
       </aside>
-        <footer class="pageFooter">
-          {% include "footerdefault.njk" %}
-        </footer>
-
-      </div>
-    </div>
+      <footer class="pageFooter">
+        {% include "footerdefault.njk" %}
+      </footer>
   </body>
 </html>
