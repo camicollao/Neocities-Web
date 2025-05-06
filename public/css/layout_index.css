@@ -173,11 +173,6 @@ img {
     padding-left: 70px;
 }
 
-iframe{
-    max-height: 50px;
-    max-width: 200px;
-}
-
 .pageFooter{
     display: none;
     background-color : #0b060e;
