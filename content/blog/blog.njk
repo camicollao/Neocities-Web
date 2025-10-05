@@ -5,14 +5,41 @@ bodyClass: body
 nesting: "../"
 css: "../css/layout_index.css"
 clique: "../images/buttons/"
+jss: "../jss/wobble.js"
 description: "Welcome to my blog!"
 ---
 
 <div class="pageContent">
-    <h2 class="headerTitle">Blog</h2>
-        <ul style="padding-top: 5px;">
+    <h1 class="headerTitle">Blog</h1>
+        <ul>
             <li><a class="links" href="{{ nesting }}blog/blogjojos.html">(10-05-2025) Why I love Jojos</a></li>
             <li><a class="links" href="{{ nesting }}blog/completos.html">(30-04-2025) What is a Completo?</a></li>
         </ul>
-    <h2 class="headerTitle">Microblog</h2>
+    <h1 class="headerTitle">Microblog</h1>
+        <div id='feed-reader' class="home-box"></div>
+            <script>
+            const feedURL = 'https://status.cafe/users/camico.atom'
+            fetch(feedURL)
+                .then(response => response.text())
+                .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+                .then(data => {
+                const entries = data.querySelectorAll("entry");
+                        let html = (entries.length < 1) ? `<p>No statuses yet.</p>`: '';
+                        if (entries.length > 1){
+                            for (i = 0; i < 10; i++) {
+                                let title = entries[i].querySelector("title").innerHTML.slice(0, 10).trim();
+                                let content = entries[i].querySelector("content").textContent.trim();
+                                let dateString = entries[i].querySelector("published").innerHTML.slice(0,10);
+                                html += `
+                                <p>${title} - ${dateString}</p>
+                                <p>${content}</p>
+                                <br>
+                                `;
+                            }
+
+                        }
+                            html += `<p><a href='https://status.cafe/users/camico'>See more at StatusCafe</a></p>`;
+                            document.getElementById("feed-reader").innerHTML = html;
+                        })
+            </script>
 </div>

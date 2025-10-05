@@ -6,10 +6,11 @@ nesting: "./"
 css: "css/layout_index.css"
 clique: "./images/buttons/"
 description: "Well, this is the home page."
+jss: "./jss/wobble.js"
 ---
 
 <div class="pageContent">
-    <h1 class="headerTitle">Hello Stranger!</h1>
+    <h1 id="wobble" class="headerTitle">Hello Stranger!</h1>
     <div style="display: flex;">
         <img class="img-home" src="./images/content/gif2.gif" alt="Gif 2" >
         <div>
@@ -28,6 +29,7 @@ description: "Well, this is the home page."
     </div>
 
     <div class="cliques-box">
+        <h1>Cool cliques and more</h1>
             <marquee>
                 <a href="https://lovesick.cafe/grrrl" target="_blank"><img class="button" src="{{ clique }}madebya-purple.png" alt="made by a girl"></a>
                 <a><img class="button" src="{{ clique }}mobilefriendly.gif" alt="This site is mobile friendly"></a>
