@@ -135,7 +135,7 @@ h1{
     background-color :#0b060e;
     float : left;
     clear : none;
-    height : 820px;
+    height : 420px;
     width : 280px;
 }
 
@@ -164,11 +164,9 @@ h1{
 }
 
 .img-home{
-    width : 200px;
-    height : 200px;
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: left;
     flex-shrink: 0;
 }
 
