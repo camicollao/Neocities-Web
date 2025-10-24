@@ -1,78 +1,156 @@
 ---
-layout: aboutme.njk
+layout: default.njk
 title: About me
 bodyClass: body
 nesting: "../"
-css: "../css/layout_aboutme.css"
+css: "../css/layout_index.css"
 description: "You're curious I guess."
 jss: "../jss/wobble.js"
 clique: "../images/buttons/"
 ---
 
-<div class="pageContentExtent">
-    <h1 id="wobble">About me</h1>
-    <div class="aboutMeContent">
-        <div class="box">
-            <div class="box-right">
-                <img class="aboutMeImage" src="../images/me/diente-de-leon.jpg" alt="Dandelion flower, I take this photo!">
+<div class="pageContent">
+    <div class="contentBox">
+        <h1 align='center' id="wobble" class="headerTitle">About me</h1>
+        <section style="display: flex;">
+            <img class="img-home" src="../images/me/diente-de-leon.jpg" alt="Dandelion flower, I take this photo!">
+            <p>
+                Hi! call me Camico, I'm a 24 year old girl (she/her) born and raised in Chile. This site is in some way a form to express my love for web coding outside of my job in tech.
+                <br>
+                Well, this is not my first time trying to make a indepent blog, I have a blog back in 2017, unfortunately that time I didn’t have a clever idea of what I wanted my personal blog to be.  
+                <br>
+                Neocities makes me see a lot of people using blogging as a form of expression. This site is full of creativity and self-identity that makes me think the internet may not be so dead. I feel so grateful to know this place. I want to thank you all for making me see we still can have an identity, and I thank you, stranger, for making my space, my identity and my words valuable outside the likes, shares and all that shit on social media (I don't hate social media, I’m just sick of it). 
+            </p>
+        </section>
+        <section>
+            <div>
+                <img src="{{ clique }}chilean_b.png" alt="chilean antipixels">
+                <img src="{{ clique }}audhd_b.png" alt="AUDHD antipixels">
+                <img src="{{ clique }}bisexual_b.png" alt="bisexual antipixels">
+                <img src="{{ clique }}partnered_b.png" alt="partnered antipixels">
+                <img src="{{ clique }}INFJ_b.png" alt="INFJ antipixels">
+                <img src="{{ clique }}she_b.png" alt="she/her antipixels">
+                <img src="{{ clique }}chaoticgood_b.png" alt="chaoticgood antipixels">
+                <img src="{{ clique }}bard_b.png" alt="bard antipixels">
+                <img src="{{ clique }}crafts_b.png" alt="crafts antipixels">
+                <img src="{{ clique }}weirdcore_b.png" alt="weirdcore antipixels">
+                <img src="{{ clique }}jjba_b.png" alt="jjba antipixels">
+                <img src="{{ clique }}ella_b.png" alt="ella antipixels">
             </div>
-            <div id="box-left">
-                <p>
-                    Hi! call me Camico, I'm a 24 year old girl (she/her) born and raised in Chile. This site is in some way a form to express my love for web coding outside of my job in tech. 
-                </p>
-                <p>
-                    Well, this is not my first time trying to make a indepent blog, I have a blog back in 2017, unfortunately that time I didn’t have a clever idea of what I wanted my personal blog to be.  
-                </p>
-                <p>
-                    Neocities makes me see a lot of people using blogging as a form of expression. This site is full of creativity and self-identity that makes me think the internet may not be so dead. I feel so grateful to know this place. I want to thank you all for making me see we still can have an identity, and I thank you, stranger, for making my space, my identity and my words valuable outside the likes, shares and all that shit on social media (I don't hate social media, I’m just sick of it). 
-                </p>
-            </div>
-        </div>
-<!--
-        <div class="box">
-            <div class="box-right">
-                <div class="content">
-                <h4 class="pageContentTitle">People that inspire me</h4>
-                <a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/assets/img/linkback.gif" alt="petrapixel"></a>
-                <a target="_blank" href="https://jaysplace.neocities.org"><img src="https://jaysplace.neocities.org/images/jaysplacebtn.png"></a>
-                </div>
-            </div>
-            <div id="box-left">
-                <h4 class="pageContentTitle">You can find on</h4>
-                <a href="https://neocities.org/site/arcoirisconazucar" target="_blank"><img class="button" src="{{ clique }}neocities-pink.gif" alt="neocities button"></a>
-            </div>
-        </div>
--->
-        <div>
-            <h2 style="text-align: center;">More about me</h2>
+
+        </section>
+    <!--
             <div class="box">
                 <div class="box-right">
-                    <h3 class="pageContentTitle">Likes</h3>
-                    <ul>
-                        <li>Kpop!</li>
-                        <li>Color purple, pink, yellow and green.</li>
-                        <li>Completos! (chilean hotdogs)</li>
-                    </ul>
+                    <div class="content">
+                    <h4 class="pageContentTitle">People that inspire me</h4>
+                    <a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/assets/img/linkback.gif" alt="petrapixel"></a>
+                    <a target="_blank" href="https://jaysplace.neocities.org"><img src="https://jaysplace.neocities.org/images/jaysplacebtn.png"></a>
+                    </div>
                 </div>
-                <div class="box-left">
-                    <h3 class="pageContentTitle">Dislikes</h3>
-                    <ul>
-                        <li>all type of hate to minorities</li>
-                        <li>Avocado (sometimes)</li>
-                    </ul>
+                <div id="box-left">
+                    <h4 class="pageContentTitle">You can find on</h4>
+                    <a href="https://neocities.org/site/arcoirisconazucar" target="_blank"><img class="button" src="{{ clique }}neocities-pink.gif" alt="neocities button"></a>
                 </div>
             </div>
-        </div>
-        <div class="content">
-            <h3 class="pageContentTitle">Hobbies</h3>
-            <ul>
-                <li>Journaling</li>
-                <li>Play videogames</li>
-                <li>Watch Series/Movies/Anime</li>
-                <li>Foodie content (restaurant reviewing)</li>
-            </ul>
-            <a href="{{ nesting }}about/favorites.html">I have a favorites page here</a>
-        </div>
-        </div>
+    -->
+        <section>
+            <h2 class="pageContentTitle" style="text-align: center;">More about me</h2>
+                <div style="display: flex;">
+                    <div>
+                        <h3>Likes</h3>
+                        <ul>
+                            <li>any type of audiovisual media which I can hyperfix to at least 3 months.</li>
+                            <li>Kpop!</li>
+                            <li>Insects.</li>
+                            <li>Color purple, pink, yellow and green.</li>
+                            <li>Completos! (chilean hotdogs).</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Dislikes</h3>
+                        <ul>
+                            <li>High pitch sounds.</li>
+                            <li>all type of hate to minorities.</li>
+                            <li>Avocado (sometimes).</li>
+                            <li>Think about the things I dislike.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li>Journaling. </li>
+                        <li>Play videogames. </li>
+                        <li>Watch Series/Movies/Anime. </li>
+                        <li>Foodie content (restaurant reviewing). </li>
+                    </ul>
+                </div>
+        </section>
+        <section>
+            <h2 class="pageContentTitle" style="text-align: center;">Favorites</h2>
+            <div>
+                <h3>Animes/Mangas</h3>
+                <a href="{{ nesting }}blog/blogjojos.html"><img class="img-poster" src="../images/me/jojos-bizarre-adventure.png" alt="Jojo's Bizarre Adventures" ></a>
+                <img class="img-poster" src="../images/me/the-apothecary-diaries.png" alt="The Apothecary diaries" >
+                <img class="img-poster" src="../images/me/jujutsu-kaisen.jpg" alt="Jujutsu Kaisen" >
+                <img class="img-poster" src="../images/me/chainsaw-man.jpg" alt="Chainsaw man" >
+                <img class="img-poster" src="../images/me/skip-and-loafer.jpg" alt="Skip and Loafer" >
+                <img class="img-poster" src="../images/me/mob-psycho-100.jpg" alt="Mob Psycho 100" >
+            </div>
+            <div>
+                <h3>Albums</h3>
+                <img class="img-square" src="../images/me/ariana-grande-dangerous-woman.jpg" alt="Dangerous Woman by Ariana Grande" >
+                <img class="img-square" src="../images/me/fob-folie-a-deux.jpg" alt="Folie à Deux by Fall Out Boy" >
+                <img class="img-square" src="../images/me/dall-artms.jpg" alt="Dall by ARTMS" >
+            </div>
+            <div>
+                <h3>Movies/Series</h3>
+                <img class="img-poster" src="../images/me/legally-blonde.jpg" alt="Legally Blonde" >
+                <img class="img-poster" src="../images/me/sherk.jpg" alt="Shrek" >
+                <img class="img-poster" src="../images/me/wallace-and-gromit.jpg" alt="Wallace And Gromit: A Grand Day Out" >
+                <img class="img-poster" src="../images/me/better-call-saul.jpg" alt="Better Call Saul" >
+
+            </div>
+            <div>
+                <h3>Videogames</h3>
+                <img class="img-poster" src="../images/me/baldurs-gate-3.jpg" alt="Baldur's Gate 3" >
+                <img class="img-poster" src="../images/me/stardew-valley.jpg" alt="Stardew Valley" >
+            </div>
+        </section>
+        <section>
+            <h3 class="pageContentTitle" style="text-align: center;">Characters</h3>
+                <div>
+                    <img class="img-square" src="../images/me/nanami-kento.jpg" alt="Nanami Kento (Jujutsu Kaisen)" >
+                    <img class="img-square" src="../images/me/gale-dekarios.jpg" alt="Gale of Waterdeep (Baldur's Gate 3)" >
+                    <img class="img-square" src="../images/me/maomao.jpg" alt="Maomao (The Apothecary diaries)" >
+                    <img class="img-square" src="../images/me/wolverine.jpg" alt="Wolverine (Marvel)" >
+                    <img class="img-square" src="../images/me/gromit.jpg" alt="Gromit (Wallace & Gromit)">
+                    <img class="img-square" src="../images/me/bruno-bucciarati.jpg" alt="Bruno Bucciarati (Jojo's Bizarre Adventures)">
+                    <img class="img-square" src="../images/me/mitsumi-iwakura.jpg" alt="Mitsumi Iwakura (Skip And Loafer)">
+                    <img class="img-square" src="../images/me/pomni.jpg" alt="Pomni (The Amazing Digital Circus)">
+                    <img class="img-square" src="../images/me/susie.jpg" alt="Susie (Deltarune)">
+                    <img class="img-square" src="../images/me/kirby.jpg" alt="Kirby">
+                    <img class="img-square" src="../images/me/kinger.jpg" alt="Kinger (The Amazing Digital Circus)">
+                    <img class="img-square" src="../images/me/tenna.jpg" alt="Tenna (Deltarune)">
+
+                </div>
+        </section>
+        <section>
+            <h2 class="pageContentTitle" style="text-align: center;">Quiz</h2>
+                <a href="https://dog-house.neocities.org/quiz/ac/villager_quiz"><img style="padding-top:10px;" src="../images/me/quiz-ac.png" alt="Quiz Animal Crossing" ><a>
+                <a href="https://www.parkplanet.net/quiz"><img style="padding-top:10px; width : 500px;" src="../images/me/quiz-kog.png" alt="Quiz Knights Of Guinevere" ><a>
+            <A href="https://theotaku.com/quizzes/view/3589/what_homestuck_kid_are_you%3F"><img border="0" src="http://www.theotaku.com/guru_results/3589_John_Egbert.jpg" alt="What Homestuck Kid Are You?" /><br /></a><A href="https://theotaku.com/quizzes/view/3589/what_homestuck_kid_are_you%3F">What Homestuck Kid Are You?</A>
+            <div class="results" style="width: 200px;background-color: #fff;color: #000;display: block;padding: 10px;border: 1px solid;margin: 0 auto;font-family: 'times';font-size: '15pt';">
+                <p style="margin: 0">This page is protected by a</p>
+                <h1 class="title" style="margin: 0">TAPIR</h1>
+                <img class="image" style="max-width: 160px;border: 1px solid" alt="TAPIR" src="https://i.ibb.co/10FV850/tapir.jpg">
+                <p class="description">Tapirs have changed very little over the past 20 million years.</p>
+                <small>
+                <a href="https://hekate.neocities.org">Want your own? Visit hekate.neocities.org!</a>
+                </small>
+            </div>
+
+        </section>
     </div>
 </div>
