@@ -90,12 +90,16 @@ img {
 }
 
 .barAbout:hover{
-    color: #43a047;
-}
-.barBlog:hover{
     color: #eeff41;
 }
+.barBlog:hover{
+    color: #2bb432;
 
+}
+.barJournal:hover{
+    color: #41d3ff;
+
+}
 
 .headerTitle{
     font-family: sans-serif;

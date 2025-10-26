@@ -16,9 +16,12 @@ body{
     color: #be8fa3;
 }
 
+h1{
+    color:#d8597f
+}
 
 h2{
-    color: #d16c9f;
+    color: #d16c8a;
     justify-content: center;
     padding-bottom: 0.5rem;
 
@@ -34,10 +37,15 @@ a{
 }
 
 .barAbout:hover{
-    color: #43a047;
+    color: #eeff41;
 }
 .barBlog:hover{
-    color: #eeff41;
+    color: #2bb432;
+
+}
+.barJournal:hover{
+    color: #41d3ff;
+
 }
 
 .button{
