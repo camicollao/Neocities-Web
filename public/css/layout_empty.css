@@ -9,25 +9,13 @@ img {
 }
 
 body{
-    background-color : #09000c;
+    background-color : #080408;
     font-family : 'Roboto', sans-serif;
     font-size : 1rem;
     padding-top : 1rem;
     color: #be8fa3;
 }
-.pageContent{
 
-    background-color : #080408;
-    display : block;
-    width : 1300px;
-    overflow : auto;
-    margin : 18rem auto 0 auto;
-    width: 50rem;
-    height: 30rem;
-    justify-content: center;
-    align-items: center;
-
-}
 
 h2{
     color: #d16c9f;
@@ -36,8 +24,20 @@ h2{
 
 }
 
-p{
-    padding-bottom: 1rem;
+a{
+    text-decoration: none;
+    color: #a55fd3;
+}
+
+.barHome:hover{
+    color: #ff5722;
+}
+
+.barAbout:hover{
+    color: #43a047;
+}
+.barBlog:hover{
+    color: #eeff41;
 }
 
 .button{
@@ -51,4 +51,9 @@ p{
     text-decoration: none;
     
 
+}
+
+.img-journal{
+    height : 400px;
+    width : 500px;
 }
