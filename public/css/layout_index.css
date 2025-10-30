@@ -161,21 +161,9 @@ h3{
 
 }
 
-.status{
-    width : auto;
-    height : auto;
-    margin-top : 5px;
-}
-
-.righMenuImagen{
-    width : 170px;
-    height : 170px;
-}
-
 .img-home{
     width : 200px;
     height : 200px;
-    align-items: left;
     padding-top: 13px;
 }
 
@@ -197,6 +185,10 @@ h3{
 .img-poster{
     width : 150px;
     height : 220px;
+}
+
+.img-text-box{
+    display: flex;
 }
 
 .pageFooter{
@@ -233,11 +225,6 @@ h3{
     .cliques-box{
         display: none;
     }
-
-    .three-columns{
-        display: flex;
-    
-    }
     
     .pageContent{
         flex-direction: row;
@@ -245,21 +232,53 @@ h3{
         max-height: auto;
     }
 
-    div{
-        width: auto;
-        flex-direction: column;
-        align-items: center;
-    }
 
     .pageHeader{
-        border-style: none;
-        clear : none;
         padding: 10px;
-    
+
+    }
+
+    .pageHeader a{
+        text-decoration: none;
+        color: #a55fd3;
+       text-align: center;
     }
 
     .phase-box{
         display: none;
+    }
+
+    .extras-box{
+        padding-left: 50px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .antipixels-box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .imgs-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .img-home{
+        padding-bottom: 5px;
+        ;
+    }
+    .img-square{
+        width : 100px;
+        height : 120px;
+    }
+
+    .img-text-box{
+        display: grid;
+        place-items: center; 
     }
     
 }
